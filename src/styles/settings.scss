@@ -1,0 +1,43 @@
+$raleway: "Raleway", sans-serif;
+
+$color-1: rgb(241,241,241);
+$color-2: rgb(221,208,190);
+$color-3: rgb(174,145,117);
+$color-4: rgb(102,81,59);
+$color-5: rgb(143,96,62);
+$color-6 : rgb(66,59,40);
+$color-7: rgb(109,109,109);
+
+
+@font-face {
+    font-family: "raleway";
+    src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "dancing";
+    src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "cormorant";
+    src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "merri";
+    src: url(../assets/fonts/Merriweather.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width : 1025px) {
+    body {
+        min-width: 1025px;
+        max-width: 1440px;
+        margin: auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
