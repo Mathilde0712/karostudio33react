@@ -30,10 +30,10 @@
     box-sizing: border-box;
   }
 }
-.header {
+.banniere {
   width: 100%;
   height: 700px;
-  background: url("/assets/photos/headerKaro.webp") center/cover no-repeat;
+  background: url("/assets/photos/banniereKaro.webp") center/cover no-repeat;
   position: relative; /* Permet de positionner les enfants */
   display: flex;
   align-items: center; /* Centre verticalement */
@@ -58,17 +58,12 @@
   gap: 30px;
 }
 
-.logo {
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  width: 200px;
-}
-
-.header-text {
-  color: white;
-  font-family: "raleway";
-  text-transform: uppercase;
+.banniere-text {
+  color: rgb(109, 109, 109);
+  font-family: "dancing";
   font-weight: 200;
-  font-size: 30px;
-}/*# sourceMappingURL=header.css.map */
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}/*# sourceMappingURL=banniere.css.map */

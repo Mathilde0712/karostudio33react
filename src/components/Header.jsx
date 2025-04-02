@@ -1,5 +1,6 @@
 
 import logo from "../assets/photos/Karostudiologo1.png"
+
 const Header = () => {
   return (
     <div className="header">
