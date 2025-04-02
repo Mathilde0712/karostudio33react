@@ -24,7 +24,7 @@
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: auto;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +32,7 @@
 }
 .banniere {
   width: 100%;
-  height: 700px;
+  height: 300px;
   background: url("/assets/photos/banniereKaro.webp") center/cover no-repeat;
   position: relative; /* Permet de positionner les enfants */
   display: flex;
@@ -62,8 +62,19 @@
   color: rgb(109, 109, 109);
   font-family: "dancing";
   font-weight: 200;
-  font-size: 40px;
+  font-size: 20px;
   position: absolute;
-  top: 40px;
+  top: 20px;
   left: 40px;
+}
+
+/* version tablette */
+@media (min-width: 1025px) {
+  .banniere {
+    height: 700px;
+  }
+  .banniere-text {
+    font-size: 40px;
+    top: 40px;
+  }
 }/*# sourceMappingURL=banniere.css.map */
