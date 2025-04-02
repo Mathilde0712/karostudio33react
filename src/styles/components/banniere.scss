@@ -4,11 +4,12 @@
   width: 100%;
   height: 300px;
   background: url("/assets/photos/banniereKaro.webp") center/cover no-repeat;
-  position: relative; /* Permet de positionner les enfants */
+  position: relative; 
   display: flex;
-  align-items: center; /* Centre verticalement */
-  justify-content: flex-start; /* Aligne le texte à gauche */
-  padding: 0 50px; /* Décale le texte de la gauche */
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 0 50px; 
+
 }
 .header::before {
   content: "";
@@ -17,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Ajuste l'opacité (0.1 à 0.5) */
+  background: rgba(255, 255, 255, 0.2); 
 }
 .content {
   display: flex;

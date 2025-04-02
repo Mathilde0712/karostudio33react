@@ -1,0 +1,58 @@
+@import "../settings";
+
+.hero-content {
+  width: 100%;
+  background: rgb(241, 241, 241);
+  padding: 10px;
+}
+
+.hero-title {
+  color: $color-4;
+  font-family: "cormorant";
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  color: $color-4;
+  font-family: "merri";
+  font-weight: 200;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 5px;
+ 
+}
+
+.heroImg {
+    width: 100%;
+}
+
+
+/* version tablette */
+
+@media (min-width: 1025px) {
+   
+   /* 
+  .hero-content {
+    height: 300px;
+  }
+
+ .Herocontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+   
+ }
+.hero-text{
+    margin-top: 30px;
+padding-bottom: 15px;
+padding-right: 50px;
+}
+*/
+
+.heroImg {
+    height: 500px;
+}
+}

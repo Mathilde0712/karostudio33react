@@ -24,7 +24,7 @@
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: auto;
     padding: 0;
     box-sizing: border-box;
@@ -55,7 +55,7 @@
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: auto;
     padding: 0;
     box-sizing: border-box;
@@ -129,21 +129,21 @@
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
-    max-width: 1440px;
+    max-width: 1920px;
     margin: auto;
     padding: 0;
     box-sizing: border-box;
   }
 }
-.header {
+.banniere {
   width: 100%;
-  height: 700px;
-  background: url("/src/assets/photos/banniereKaro.webp") center/cover no-repeat;
-  position: relative; /* Permet de positionner les enfants */
+  height: 300px;
+  background: url("/assets/photos/banniereKaro.webp") center/cover no-repeat;
+  position: relative;
   display: flex;
-  align-items: center; /* Centre verticalement */
-  justify-content: flex-start; /* Aligne le texte à gauche */
-  padding: 0 50px; /* Décale le texte de la gauche */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 50px;
 }
 
 .header::before {
@@ -153,7 +153,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Ajuste l'opacité (0.1 à 0.5) */
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .content {
@@ -163,9 +163,102 @@
   gap: 30px;
 }
 
-.header-text {
-  color: white;
+.banniere-text {
+  color: rgb(109, 109, 109);
   font-family: "dancing";
   font-weight: 200;
-  font-size: 30px;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+/* version tablette */
+@media (min-width: 1025px) {
+  .banniere {
+    height: 700px;
+  }
+  .banniere-text {
+    font-size: 40px;
+    top: 40px;
+  }
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../assets/fonts/Merriweather.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+.hero {
+  width: 100%;
+  height: 300px;
+  background: rgb(221, 208, 190);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 50px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+}
+
+.banniere-text {
+  color: rgb(109, 109, 109);
+  font-family: "dancing";
+  font-weight: 200;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+/* version tablette */
+@media (min-width: 1025px) {
+  .banniere {
+    height: 700px;
+  }
+  .banniere-text {
+    font-size: 40px;
+    top: 40px;
+  }
 }/*# sourceMappingURL=index.css.map */
