@@ -1,8 +1,11 @@
 .momentDeVie {
-  background-color: rgb(221, 208, 190);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.momentDeVie2 {
+  background-color: rgb(221, 208, 190);
 }
 
 .title-moment {
@@ -12,6 +15,10 @@
   color: $color-4;
   font-family: "cormorant";
   font-weight: 300;
+}
+
+.momentTitle {
+    color:rgb(221, 208, 190) !important;
 }
 .content-moment {
   display: flex;
@@ -34,19 +41,18 @@
 }
 
 @media (min-width: 768px) {
-    .content-moment {
-        display: flex;
-        flex-direction: row;
-        align-items: space-around;
-        gap: 20px;
-      }
-      .moment img {
-        width: 150px;
-        height: 200px;
-        object-fit: cover;
-      }
-
-    }
+  .content-moment {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    gap: 20px;
+  }
+  .moment img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
 
 @media (min-width: 1025px) {
   .content-moment {
@@ -54,13 +60,10 @@
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-    
   }
-      .moment img {
-        width: 200px;
-        height: 250px;
-        object-fit: cover;
-       
-      }
-
+  .moment img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+  }
 }
