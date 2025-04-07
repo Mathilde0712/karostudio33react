@@ -214,51 +214,141 @@
     box-sizing: border-box;
   }
 }
-.hero {
+.hero-content {
   width: 100%;
-  height: 300px;
-  background: rgb(221, 208, 190);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 50px;
+  padding: 10px;
+  background: rgb(241, 241, 241);
 }
 
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+.hero-title {
+  color: rgb(102, 81, 59);
+  font-family: "cormorant";
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 30px;
-}
-
-.banniere-text {
-  color: rgb(109, 109, 109);
-  font-family: "dancing";
+.hero-text {
+  color: rgb(102, 81, 59);
+  font-family: "merri";
   font-weight: 200;
-  font-size: 20px;
-  position: absolute;
-  top: 20px;
-  left: 40px;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.hero-text1 {
+  color: rgb(102, 81, 59);
+  font-family: "merri";
+  font-weight: 200;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.heroImg {
+  width: 100%;
 }
 
 /* version tablette */
 @media (min-width: 1025px) {
-  .banniere {
-    height: 700px;
+  .Herocontent {
+    padding-bottom: 40px;
   }
-  .banniere-text {
+  .hero-title {
+    margin-top: 40px;
+    margin-left: 40px;
     font-size: 40px;
-    top: 40px;
+  }
+  .hero-text1 {
+    margin-left: 400px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .hero-text {
+    margin-left: 400px;
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .heroImg {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover; /* ou 'contain', selon le rendu voulu */
+  }
+}
+.momentDeVie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.momentDeVie2 {
+  background-color: rgb(221, 208, 190);
+}
+
+.title-moment {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(102, 81, 59);
+  font-family: "cormorant";
+  font-weight: 300;
+}
+
+.momentTitle {
+  color: rgb(221, 208, 190) !important;
+}
+
+.content-moment {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.moment img {
+  width: 200px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.moment h2 {
+  font-family: "dancing";
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+@media (min-width: 768px) {
+  .content-moment {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    gap: 20px;
+  }
+  .moment img {
+    width: 150px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .content-moment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+  .moment img {
+    width: 200px;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=index.css.map */
