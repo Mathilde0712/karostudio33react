@@ -1,9 +1,13 @@
 @import "../settings";
 
+.hero{
+  background: rgb(241, 241, 241);
+  
+}
+
 .hero-content {
   width: 100%;
-  background: rgb(241, 241, 241);
-  padding: 10px;
+    padding: 10px;
 }
 
 .hero-title {
@@ -38,11 +42,7 @@
 /* version tablette */
 
 @media (min-width: 1025px) {
-  /* 
-  .hero-content {
-    height: 300px;
-  }
-*/
+
   .Herocontent {
     padding-bottom: 40px;
   }
@@ -69,7 +69,7 @@
 
   .heroImg {
     width: 100%;
-    height: 500px;
+    height: auto;
     object-fit: cover; /* ou 'contain', selon le rendu voulu */
   }
 }
