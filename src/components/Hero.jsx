@@ -11,7 +11,7 @@ const Hero = () => {
 
 
           </p>
-          <p className="hero-text">
+          <p className="hero-text hero-text2">
           Mon style est lumineux et épuré, dans la douceur des tons beige et blanc. Je capture les moments importants de votre vie avec sensibilité et authenticité.
           </p>
           <p className="hero-text">

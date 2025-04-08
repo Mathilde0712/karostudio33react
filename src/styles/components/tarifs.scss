@@ -1,15 +1,11 @@
-.momentDeVie {
+.tarif {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
-}
-
-.momentDeVie2 {
   background-color: rgb(221, 208, 190);
 }
 
-.title-moment {
+.title-tarif {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -19,26 +15,20 @@
   font-size: 40px;
 }
 
-.momentDeVie3 {
-  margin-top: 50px;
-}
-
-.momentTitle {
-    color:rgb(221, 208, 190) !important;
-}
-.content-moment {
+.tarifcontent {
   display: flex;
   flex-direction: column;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
-.moment img {
+.tarif img {
   width: 200px;
   height: 250px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
-.moment h2 {
+.tarif h2 {
   font-family: "dancing";
   color: white;
   font-weight: 200;
@@ -47,14 +37,34 @@ padding-bottom: 50px;
   padding-top: 0;
 }
 
+p {
+  color: rgb(102, 81, 53);
+}
+
+.text1 {
+  margin-bottom: 20px !important;
+}
+
+.prix {
+  color: white !important;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cartekdo {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "cormorant";
+}
+
 @media (min-width: 768px) {
-  .content-moment {
+  .content-tarif {
     display: flex;
     flex-direction: row;
     align-items: space-around;
-    gap: 20px;
+    gap: 60px;
   }
-  .moment img {
+  .tarif img {
     width: 150px;
     height: 200px;
     object-fit: cover;
@@ -62,15 +72,20 @@ padding-bottom: 50px;
 }
 
 @media (min-width: 1025px) {
-  .content-moment {
+  .content-tarif {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    gap: 150px;
   }
-  .moment img {
+  .tarif img {
     width: 200px;
     height: 250px;
     object-fit: cover;
+  }
+
+  .cartekdo {
+    font-size: 40px;
+    font-family: "cormorant";
   }
 }

@@ -51,7 +51,6 @@ const MomentDeVie = () => {
             </div>
         </div>
         <div className='momentDeVie momentDeVie3'>
-            <h1 className='title-moment'>ÉVÈNEMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>
                     <img src={grossessePhoto} alt='gender reveal'/>
