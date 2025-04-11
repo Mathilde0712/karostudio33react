@@ -79,7 +79,10 @@ p {
     display: flex;
     flex-direction: row;
     height: 500px;
+
   }
+
+  
 
   .separator1 {
     border-top: none;
@@ -87,18 +90,24 @@ p {
     border-left: 3px solid white;
     border-right: 3px solid white;
     height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .separator2 {
     border-bottom: none;
     border-right: 3px solid white;
     height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .separator3 {
     border-bottom: none;
     border-right: 3px solid white;
     height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .tarif img {
@@ -114,6 +123,25 @@ p {
     flex-direction: row;
     justify-content: center;
   }
+
+  .separator1 {
+ 
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .separator2 {
+  
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .separator3 {
+  
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .tarif img {
     width: 200px;
     height: 250px;
