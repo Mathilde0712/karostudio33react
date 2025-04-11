@@ -21,6 +21,23 @@
   padding-bottom: 50px;
 }
 
+.separator1 {
+  padding: 20px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.separator2 {
+  padding: 20px;
+  border-bottom: 3px solid white;
+}
+
+.separator3 {
+  padding: 20px;
+  border-bottom: 3px solid white;
+  margin-bottom: 20px;
+}
+
 .tarif img {
   width: 200px;
   height: 250px;
@@ -61,9 +78,29 @@ p {
   .content-tarif {
     display: flex;
     flex-direction: row;
-    align-items: space-around;
-    gap: 60px;
+    height: 500px;
   }
+
+  .separator1 {
+    border-top: none;
+    border-bottom: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    height: 200px;
+  }
+
+  .separator2 {
+    border-bottom: none;
+    border-right: 3px solid white;
+    height: 200px;
+  }
+
+  .separator3 {
+    border-bottom: none;
+    border-right: 3px solid white;
+    height: 200px;
+  }
+
   .tarif img {
     width: 150px;
     height: 200px;
@@ -76,7 +113,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 150px;
   }
   .tarif img {
     width: 200px;
