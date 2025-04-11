@@ -1,4 +1,5 @@
 import Banniere from "../components/Banniere";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import MomentDeVie from "../components/MomentDeVie";
@@ -12,6 +13,7 @@ const Home = () => {
            <Hero />
            <MomentDeVie />
            <Tarifs />
+           <Contact />
         </div>
     );
 };

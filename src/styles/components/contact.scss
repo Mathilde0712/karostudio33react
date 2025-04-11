@@ -1,0 +1,64 @@
+a {
+  text-decoration: none;
+  color: $color-4;
+}
+
+h1,
+h2 {
+  font-family: "cormorant";
+  color: $color-3;
+  font-weight: 200;
+}
+
+h1 {
+  text-align: center;
+}
+
+p{
+    text-align: start ;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  background: url("/assets/photos/plume.webp") center/cover no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contactcontent1 {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  margin: 20px;
+}
+
+.email {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.contactcontent2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .contactcontent1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+  }
+
+ 
+}
+
+@media (min-width: 1025px) {
+    .contact {
+       
+    align-items: center;
+      }
+  
+    }
