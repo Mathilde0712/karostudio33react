@@ -9,6 +9,7 @@ const Tarifs = () => {
       <div className="tarif">
         <h1 className="title-tarif">TARIFS</h1>
         <div className="content-tarif">
+          <div className="contain" >
           <div className="tarifcontent">
           <div className="separator1" >
             <h2 className="tarifTitle">Bulle de bonheur </h2>
@@ -29,8 +30,10 @@ const Tarifs = () => {
             <img src={mariage2} alt="mariée" />
             </div>
             </div>
+            </div>
+          <div className="contain" >
           <div className="tarifcontent">
-          <div className="separator3" >
+          <div className="separator3 separator4" >
             <h2 className="tarifTitle">Sur un nuage </h2>
             <p>30 photos numériques</p>
             <p>accessoires et pret de tenue</p>
@@ -48,6 +51,7 @@ const Tarifs = () => {
             <p className="prix">20 euros OFFERT</p>
             <img src={grossesse2} alt="famille" />
             </div>
+          </div>
           </div>
       </div>
       <p className="cartekdo" >Pour offrir une carte cadeau, contactez moi !</p>
