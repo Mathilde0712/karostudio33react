@@ -1,7 +1,8 @@
-
 import famillePhoto from "../assets/photos/famille.webp";
 import couplePhoto from "../assets/photos/couple.webp";
 import mariage2 from "../assets/photos/mariage2.webp";
+import grossesse2 from "../assets/photos/grossesse2.webp"
+
 const Tarifs = () => {
   return (
     <div>
@@ -18,8 +19,6 @@ const Tarifs = () => {
             <img src={couplePhoto} alt="couple" />
             </div>
           </div>
-          
-         
           <div className="tarifcontent ">
             <div className="separator2" >
             <h2 className="tarifTitle">Jolie merveille </h2>
@@ -30,8 +29,6 @@ const Tarifs = () => {
             <img src={mariage2} alt="mariée" />
             </div>
             </div>
-          
-      
           <div className="tarifcontent">
           <div className="separator3" >
             <h2 className="tarifTitle">Sur un nuage </h2>
@@ -40,6 +37,16 @@ const Tarifs = () => {
             <p className="text1">home studio ou extérieur</p>
             <p className="prix">230 euros</p>
             <img src={famillePhoto} alt="famille" />
+            </div>
+          </div>
+          <div className="tarifcontent">
+          <div className="separator3" >
+            <h2 className="tarifTitle">Pack Maternité </h2>
+            <p>Shooting</p>
+            <p>Grossesse +</p>
+            <p className="text1">Maternité</p>
+            <p className="prix">20 euros OFFERT</p>
+            <img src={grossesse2} alt="famille" />
             </div>
           </div>
       </div>
