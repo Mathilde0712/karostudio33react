@@ -1,4 +1,4 @@
-import React from "react";
+import logo from "../assets/photos/Karostudiologo1.png"
 
 const Contact = () => {
   return (
@@ -22,6 +22,10 @@ const Contact = () => {
           </a>
           <a href="https://www.instagram.com/karostudio33/">INSTAGRAM</a>
         </div>
+        <div className="infoContact">
+        <p>Contactez-moi dès aujourd'hui pour réserver votre séance photo , discuter de vos idées, et planifier une expérience unique qui vous ressemble.</p>
+        <img src={logo} alt="logo" className="logoContact"/>
+      </div>
       </div>
     </div>
   );
