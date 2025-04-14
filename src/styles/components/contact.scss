@@ -55,6 +55,19 @@ h1 {
     position: relative;
     width: 200px;
 }
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    fill: rgb(209, 191, 174); /* change la couleur ici */
+    margin: 10px;
+}
+
+.reseauContent{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 768px) {
   .contactcontent1 {
     display: flex;
@@ -63,6 +76,21 @@ h1 {
     margin: 20px;
   }
 
+  .contactcontent2 {
+
+   
+   align-items: center;
+    margin: 20px;
+  }
+
+  .reseauContent{
+    display: flex;
+  flex-direction: row;
+}
+
+.infoContact p{
+    text-align: center;
+}
  
 }
 
