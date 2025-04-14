@@ -54,6 +54,7 @@ const Tarifs = () => {
           </div>
           </div>
       </div>
+      <p className="sup" >Photo retouchée supplémentaire : +6 € par photo</p>
       <p className="cartekdo" >Pour offrir une carte cadeau, contactez moi !</p>
       </div>
       </div>
