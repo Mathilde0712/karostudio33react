@@ -14,8 +14,8 @@ h1 {
   text-align: center;
 }
 
-.tel p{
-    text-align: justify ;
+.tel p {
+  text-align: justify;
 }
 
 .contact {
@@ -24,6 +24,11 @@ h1 {
   background: url("/assets/photos/plume2.webp") center/cover no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.contactMe p {
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .contactcontent1 {
@@ -44,60 +49,49 @@ h1 {
   margin-left: 20px;
 }
 
-.infoContact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.infoContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.logoContact{
-    position: relative;
-    width: 200px;
+.logoContact {
+  position: relative;
+  width: 200px;
 }
 
-.social-icon{
-    width: 40px;
-    height: 40px;
-    fill: rgb(209, 191, 174); /* change la couleur ici */
-    margin: 10px;
+.social-icon {
+  width: 40px;
+  height: 40px;
+  fill: rgb(209, 191, 174); /* change la couleur ici */
+  margin: 10px;
 }
 
-.reseauContent{
-    display: flex;
-    flex-direction: column;
+.reseauContent {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .contactcontent1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin: 20px;
   }
 
   .contactcontent2 {
-
-   
-   align-items: center;
     margin: 20px;
   }
 
-  .reseauContent{
+  .reseauContent {
     display: flex;
-  flex-direction: row;
-}
+    flex-direction: row;
+  }
 
-.infoContact p{
-    text-align: center;
-}
- 
+
 }
 
 @media (min-width: 1025px) {
-    .contact {
-       
+  .contact {
     align-items: center;
-      }
-  
-    }
+  }
+}
