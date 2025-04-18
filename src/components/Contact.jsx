@@ -2,14 +2,14 @@ import logo from "../assets/photos/Karostudiologo1.png";
 
 const Contact = () => {
   return (
-    <div>
-      <div className="contact">
-        <h1>PRISE DE CONTACT</h1>
-        <div className="contactMe">
-          <p>Contactez-moi dès aujourd’hui pour réserver votre séance photo, discuter de vos idées, planifier une expérience unique qui vous ressemble… ou offrir un joli moment grâce à une carte cadeau personnalisée.
-        </p>
-        </div>
-
+    <div className="contact">
+      <h1>PRISE DE CONTACT</h1>
+      <p>
+        Contactez-moi dès aujourd’hui pour réserver votre séance photo, discuter
+        de vos idées, planifier une expérience unique qui vous ressemble… ou
+        offrir un joli moment grâce à une carte cadeau personnalisée.
+      </p>
+      <div>
         <div className="contactcontent1">
           <div className="email">
             <h2>E-MAIL</h2>
@@ -21,7 +21,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="contactcontent2">
-          <div className="reseauContent">
+        <div className="reseauContent">
             <a href="https://www.facebook.com/profile.php?id=61569209636631&locale=fr_FR">
               <svg
                 className="social-icon"
@@ -45,8 +45,9 @@ const Contact = () => {
         <div className="infoContact">
           <img src={logo} alt="logo" className="logoContact" />
         </div>
+        </div>
       </div>
-    </div>
+    
   );
 };
 

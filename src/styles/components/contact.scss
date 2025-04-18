@@ -14,39 +14,54 @@ h1 {
   text-align: center;
 }
 
-.tel p {
-  text-align: justify;
-}
-
 .contact {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   background: url("/assets/photos/plume2.webp") center/cover no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.contactMe p {
-  margin-top: 20px;
-  font-size: 20px;
+.contact p {
+  padding : 20px
 }
 
 .contactcontent1 {
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
-  margin: 20px;
+  align-items: center;
+  gap: 30px;
 }
 
-.email {
-  margin-right: 20px;
-  margin-bottom: 20px;
+.email,
+.tel {
+  width: 250px; /* ou une valeur qui va bien avec ton design */
+  text-align: center;
 }
 
-.contactcontent2 {
+.tel p{
+  padding: 0px  !important;
+  
+}
+
+.reseauContent {
   display: flex;
-  flex-direction: column;
-  margin-left: 20px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* espace entre les icônes */
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  fill:rgb(198, 176, 156); /* ou une couleur plus neutre/douce si tu veux */
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
 }
 
 .infoContact {
@@ -61,17 +76,6 @@ h1 {
   width: 200px;
 }
 
-.social-icon {
-  width: 40px;
-  height: 40px;
-  fill: rgb(209, 191, 174); /* change la couleur ici */
-  margin: 10px;
-}
-
-.reseauContent {
-  display: flex;
-  flex-direction: column;
-}
 
 @media (min-width: 768px) {
   .contactcontent1 {
