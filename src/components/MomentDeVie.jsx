@@ -55,15 +55,15 @@ const MomentDeVie = () => {
             <div className='content-moment'>
                 <div className='moment'>
                     <img src={grossessePhoto} alt='gender reveal'/>
-                    <h2 className='momentTitle' >Gender Reveal</h2>
+                    <h2 className='momentTitle2' >Gender Reveal</h2>
                 </div>
                 <div className='moment'>
                     <img src={evjf} alt='evjf' />
-                    <h2 className='momentTitle'>Evjf</h2>
+                    <h2 className='momentTitle2'>Evjf</h2>
                 </div>
                 <div className='moment'>
                     <img src={pro} alt='professionnel'/>
-                    <h2 className='momentTitle' >Professionnel</h2>
+                    <h2 className='momentTitle2' >Professionnel</h2>
                 </div>
             </div>
         </div>

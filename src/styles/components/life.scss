@@ -24,7 +24,11 @@
 }
 
 .momentTitle {
-    color:rgb(221, 208, 190) !important;
+    color:white !important;
+}
+
+.momentTitle2 {
+  color:rgb(221, 208, 190) !important;
 }
 .content-moment {
   display: flex;
@@ -41,7 +45,7 @@ padding-bottom: 50px;
 
 .moment h2 {
   font-family: "dancing";
-  color: white;
+  color:rgb(221, 208, 190);
   font-weight: 200;
   text-align: center;
   padding-bottom: 15px;

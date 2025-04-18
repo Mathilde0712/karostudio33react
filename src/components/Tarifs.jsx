@@ -5,7 +5,7 @@ import grossesse2 from "../assets/photos/grossesse2.webp"
 
 const Tarifs = () => {
   return (
-    <div>
+   
       <div className="tarif">
         <h1 className="title-tarif">TARIFS</h1>
         <div className="content-tarif">
@@ -55,9 +55,9 @@ const Tarifs = () => {
           </div>
       </div>
       <p className="sup" >Photo retouchée supplémentaire : +6 € par photo</p>
-      <p className="cartekdo" >Pour offrir une carte cadeau, contactez moi !</p>
+      <p className="sup" >Le tarif indiqué ne comprend pas les frais kilométriques.</p>
       </div>
-      </div>
+      
     
   );
 };

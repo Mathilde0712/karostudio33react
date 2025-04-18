@@ -6,9 +6,7 @@ const Contact = () => {
       <div className="contact">
         <h1>PRISE DE CONTACT</h1>
         <div className="contactMe">
-          <p>Contactez-moi dès aujourd'hui pour réserver votre séance photo ,
-          discuter de vos idées, et planifier une expérience unique qui vous
-          ressemble.
+          <p>Contactez-moi dès aujourd’hui pour réserver votre séance photo, discuter de vos idées, planifier une expérience unique qui vous ressemble… ou offrir un joli moment grâce à une carte cadeau personnalisée.
         </p>
         </div>
 
