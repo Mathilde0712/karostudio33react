@@ -1,8 +1,12 @@
 @import "../settings";
 
+.hero {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-content {
   width: 100%;
-  
   padding: 10px;
   background: rgb(241, 241, 241);
 }
@@ -36,14 +40,16 @@
 
 .heroImg {
   width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* version tablette */
 
 @media (min-width: 1025px) {
   .Herocontent {
-    padding-bottom: 40px;
-    height: 300px;
+    padding: 0 40px 40px 40px;
   }
 
   .hero-title {
@@ -53,16 +59,12 @@
   }
 
   .hero-text1 {
-    margin-left: 400px;
     margin-bottom: 20px;
-    padding-right: 50px;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 40px;
   }
 
   .hero-text {
-    margin-left: 400px;
-    padding-right: 50px;
     font-size: 20px;
   }
 

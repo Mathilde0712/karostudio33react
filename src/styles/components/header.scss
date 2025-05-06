@@ -1,82 +1,111 @@
 @import "../settings";
 
 .header {
-    width: 100%;
-    height: 700px;
-    background: url('/assets/photos/headerKaro.webp') center 10% /cover no-repeat;
-    position: relative; /* Permet de positionner les enfants */
-    display: flex;
-    align-items: center; /* Centre verticalement */
-    justify-content: flex-start; /* Aligne le texte à gauche */
-    padding: 0 50px; /* Décale le texte de la gauche */
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: center top; /* ou "center 20%" si besoin */
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.slide img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+   
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.logo {
+  align-self: flex-end;
+  max-width: 120px;
+  height: auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.text h2 {
+  color: #fff !important; /* priorité absolue */
+  font-family: "raleway";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.text h2 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+/* TABLETTE */
+@media (min-width: 768px) {
+  .overlay {
+    padding: 2rem 3rem;
   }
 
- .header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* Ajuste l'opacité (0.1 à 0.5) */
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 30px;
+  .text h1,
+  .text h2 {
+    font-size: 1.6rem;
   }
 
   .logo {
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    width: 200px;
+    max-width: 300px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .overlay {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+  }
+  .header {
+    height: 100vh;
+  }
+
+  .slide img {
+    height: 100vh;
   }
   
-  .header-text {
-    position: absolute;
-    bottom: 120px; /* distance depuis le bas */
-    left: 20px;   /* distance depuis la gauche */
-    color: white;
-    font-family: "raleway";
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 500;
-    font-size: 30px;
+  .special-position {
+    object-position: center 5% !important;
   }
-  .header-text1 {
-    position: absolute;
-    bottom: 40px; /* distance depuis le bas */
-    left: 20px;   /* distance depuis la gauche */
-    color: white;
-    font-family: "raleway";
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 500;
-    font-size: 30px;
+
+  .text {
+    max-width: 50%;
+    margin-bottom: 6rem; /* plus bas */
   }
-  @media (min-width: 1025px) {
-    .header-text {
-      position: absolute;
-      bottom: 120px; /* distance depuis le haut */
-      left: 30%;
-      transform: translateX(-50%);
-      text-align: center;
-      font-size: 40px;
-    }
-    .header-text1 {
-      position: absolute;
-      bottom: 60px; /* distance depuis le haut */
-      left: 30%;
-      transform: translateX(-50%);
-      text-align: center;
-      font-size: 40px;
-    }
+
   .logo {
     position: absolute;
-    top: 10px;
-    right: 0px;
-    width: 400px;
+    top: 1rem;
+    right: 1rem;
+  }
+    .text h1,
+    .text h2 {
+      font-size: 2.2rem;
+      line-height: 1.5;
+    
   }
 }

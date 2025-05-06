@@ -41,6 +41,7 @@ padding-bottom: 50px;
   height: 250px;
   object-fit: cover;
   object-position: top;
+  border-radius: 12%;
 }
 
 .moment h2 {
@@ -60,8 +61,8 @@ padding-bottom: 50px;
     gap: 20px;
   }
   .moment img {
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 300px;
     object-fit: cover;
   }
 }
@@ -74,8 +75,12 @@ padding-bottom: 50px;
     gap: 40px;
   }
   .moment img {
-    width: 200px;
-    height: 250px;
+    width: 256px;
+  height: 384px;
     object-fit: cover;
+  }
+
+  .moment h2{
+    font-size: 30px;
   }
 }
