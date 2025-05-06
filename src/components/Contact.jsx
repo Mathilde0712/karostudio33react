@@ -48,7 +48,10 @@ const Contact = () => {
   
     
     <img src={logo} alt="logo" className="logoContact footer-logo" />
-    
+    <footer className="footer">
+  <p>© 2025 Karostudio. Tous droits réservés.</p>
+  <a href="/mentions-legales">Mentions légales</a>
+</footer>
   </div>
    
   );

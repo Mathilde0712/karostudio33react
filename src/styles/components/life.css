@@ -1,10 +1,38 @@
-@import "../settings";
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../assets/fonts/Merriweather.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
 .momentDeVie {
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 
 .momentDeVie1 {
@@ -15,7 +43,7 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  color: $color-3;
+  color: rgb(174, 145, 117);
   font-family: "cormorant";
   font-weight: 300;
   font-size: 40px;
@@ -26,29 +54,32 @@
 }
 
 .momentTitle {
-    color:white !important;
+  color: white !important;
 }
 
 .momentTitle2 {
-  color:rgb(221, 208, 190) !important;
+  color: rgb(221, 208, 190) !important;
 }
+
 .content-moment {
   display: flex;
   flex-direction: column;
-padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .moment img {
   width: 200px;
   height: 250px;
-  object-fit: cover;
-  object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 12%;
 }
 
 .moment h2 {
   font-family: "dancing";
-  color:rgb(221, 208, 190);
+  color: rgb(221, 208, 190);
   font-weight: 200;
   text-align: center;
   padding-bottom: 15px;
@@ -65,10 +96,10 @@ padding-bottom: 50px;
   .moment img {
     width: 150px;
     height: 225px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
-
 @media (min-width: 1025px) {
   .content-moment {
     display: flex;
@@ -78,11 +109,11 @@ padding-bottom: 50px;
   }
   .moment img {
     width: 200px;
-  height: 300px;
-    object-fit: cover;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
-
-  .moment h2{
+  .moment h2 {
     font-size: 30px;
   }
-}
+}/*# sourceMappingURL=life.css.map */

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../assets/fonts/Merriweather.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: rgb(174, 145, 117) !important;
+}
+
+.footer a {
+  display: block;
+  margin-top: 0.5rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}/*# sourceMappingURL=footer.css.map */

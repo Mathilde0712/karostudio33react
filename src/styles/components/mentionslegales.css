@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "raleway";
+  src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dancing";
+  src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "cormorant";
+  src: url(../assets/fonts/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "merri";
+  src: url(../assets/fonts/Merriweather.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  body {
+    min-width: 1025px;
+    max-width: 1920px;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+.mentions-legales {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.mentions-legales h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mentions-legales section {
+  margin-bottom: 2rem;
+}
+
+.mentions-legales h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.mentions-legales a {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}/*# sourceMappingURL=mentionslegales.css.map */

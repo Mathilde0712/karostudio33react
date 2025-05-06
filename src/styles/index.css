@@ -62,48 +62,129 @@
   }
 }
 .header {
+  position: relative;
   width: 100%;
-  height: 700px;
-  background: url("/assets/photos/headerKaro.webp") center/cover no-repeat;
-  position: relative; /* Permet de positionner les enfants */
-  display: flex;
-  align-items: center; /* Centre verticalement */
-  justify-content: flex-start; /* Aligne le texte à gauche */
-  padding: 0 50px; /* Décale le texte de la gauche */
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top; /* ou "center 20%" si besoin */
+  overflow: hidden;
 }
 
-.header::before {
-  content: "";
+.slide img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Ajuste l'opacité (0.1 à 0.5) */
-}
-
-.content {
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 30px;
+  justify-content: flex-end;
 }
 
 .logo {
-  position: absolute;
-  top: 20px;
-  right: 0px;
-  width: 200px;
+  filter: brightness(0.7);
+  align-self: flex-end;
+  max-width: 120px;
+  position: absolute; /* 👈 nécessaire pour que top/right fonctionnent en mobile */
+  top: 1rem;
+  right: 1rem;
+  height: auto;
 }
 
-.header-text {
-  color: white;
+.text h2 {
+  color: #fff !important; /* priorité absolue */
   font-family: "raleway";
   text-transform: uppercase;
-  font-weight: 200;
-  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-size: 1.2rem;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeInUp 2s ease-out;
+}
+
+/* TABLETTE */
+@media (min-width: 768px) {
+  .overlay {
+    padding: 2rem 3rem;
+  }
+  .text h1,
+  .text h2 {
+    font-size: 1.6rem;
+  }
+  .logo {
+    max-width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .logo {
+    max-width: 200px;
+  }
+}
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .overlay {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 4rem 5rem;
+  }
+  .header {
+    height: 100vh;
+  }
+  .slide img {
+    height: 100vh;
+  }
+  .special-position {
+    -o-object-position: center 5% !important;
+       object-position: center 5% !important;
+  }
+  .text {
+    max-width: 50%;
+    margin-bottom: 6rem; /* plus bas */
+  }
+  .logo {
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    max-width: 300px;
+  }
+  .text h1,
+  .text h2 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+}
 @font-face {
   font-family: "raleway";
   src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
@@ -214,6 +295,11 @@
     box-sizing: border-box;
   }
 }
+.hero {
+  margin: 0;
+  padding: 0;
+}
+
 .hero-content {
   width: 100%;
   padding: 10px;
@@ -235,6 +321,7 @@
   font-size: 16px;
   text-align: justify;
   margin-bottom: 5px;
+  padding: 0 15px 0 15px;
 }
 
 .hero-text1 {
@@ -244,16 +331,20 @@
   font-size: 16px;
   text-align: justify;
   margin-bottom: 5px;
+  padding: 0 15px 0 15px;
 }
 
 .heroImg {
   width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* version tablette */
 @media (min-width: 1025px) {
   .Herocontent {
-    padding-bottom: 40px;
+    padding: 0 40px 40px 40px;
   }
   .hero-title {
     margin-top: 40px;
@@ -261,14 +352,11 @@
     font-size: 40px;
   }
   .hero-text1 {
-    margin-left: 400px;
     margin-bottom: 20px;
-    padding-right: 50px;
     font-size: 20px;
+    margin-top: 40px;
   }
   .hero-text {
-    margin-left: 400px;
-    padding-right: 50px;
     font-size: 20px;
   }
   .heroImg {
@@ -282,10 +370,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
 }
 
-.momentDeVie2 {
+.momentDeVie1 {
   background-color: rgb(221, 208, 190);
 }
 
@@ -293,12 +380,21 @@
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  color: rgb(102, 81, 59);
+  color: rgb(174, 145, 117);
   font-family: "cormorant";
   font-weight: 300;
+  font-size: 40px;
+}
+
+.momentDeVie3 {
+  margin-top: 50px;
 }
 
 .momentTitle {
+  color: white !important;
+}
+
+.momentTitle2 {
   color: rgb(221, 208, 190) !important;
 }
 
@@ -313,11 +409,14 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 12%;
 }
 
 .moment h2 {
   font-family: "dancing";
-  color: white;
+  color: rgb(221, 208, 190);
   font-weight: 200;
   text-align: center;
   padding-bottom: 15px;
@@ -333,7 +432,7 @@
   }
   .moment img {
     width: 150px;
-    height: 200px;
+    height: 225px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -347,8 +446,331 @@
   }
   .moment img {
     width: 200px;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .moment h2 {
+    font-size: 30px;
+  }
+}
+.tarif {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(221, 208, 190);
+}
+
+.conctactMe {
+  margin-top: 20px !important;
+  font-size: 30px !important;
+}
+
+.title-tarif {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(174, 145, 117);
+  font-family: "cormorant";
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.tarifcontent {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.separator1 {
+  padding: 20px;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.separator2 {
+  padding: 20px;
+  border-bottom: 3px solid white;
+}
+
+.separator3 {
+  padding: 20px;
+  border-bottom: 3px solid white;
+  margin-bottom: 20px;
+}
+
+.separator3 p {
+  text-align: center;
+}
+
+.tarif img {
+  width: 200px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.tarif h2 {
+  font-family: "dancing";
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+p {
+  color: rgb(102, 81, 53);
+  text-align: center;
+}
+
+.text1 {
+  margin-bottom: 20px !important;
+}
+
+.prix {
+  color: white !important;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sup {
+  margin-bottom: 20px;
+  font-family: "cormorant";
+}
+
+@media (min-width: 768px) {
+  .content-tarif {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .tarifcontent {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 220px;
+  }
+  .contain {
+    display: flex;
+  }
+  .separator1 {
+    border-top: none;
+    border-bottom: none;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .separator2 {
+    border-bottom: none;
+    border-right: 3px solid white;
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .separator3 {
+    border-bottom: none;
+    border-right: 3px solid white;
+    height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .separator4 {
+    border-left: 3px solid white;
+  }
+  .tarif img {
+    width: 150px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1025px) {
+  .content-tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+  }
+  .separator1 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .separator2 {
+    border-right: none;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .separator3 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .separator4 {
+    padding-left: 25px;
+  }
+  .tarif img {
+    width: 200px;
     height: 250px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .cartekdo {
+    font-size: 40px;
+    font-family: "cormorant";
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(102, 81, 59);
+  font-family: "cormorant";
+}
+
+h1,
+h2 {
+  font-family: "cormorant";
+  color: rgb(174, 145, 117);
+  font-weight: 200;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background: url("/assets/photos/plume2.webp") center/cover no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact p {
+  padding: 20px;
+  font-family: "cormorant";
+}
+
+.contactcontent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.email,
+.tel {
+  width: 250px; /* ou une valeur qui va bien avec ton design */
+  text-align: center;
+}
+
+.tel p {
+  padding: 0px !important;
+}
+
+.reseauContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px; /* espace entre les icônes */
+  margin-top: 30px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  fill: rgb(198, 176, 156); /* ou une couleur plus neutre/douce si tu veux */
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.infoContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logoContact {
+  margin: 0 auto;
+  width: 200px;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("/assets/photos/plume2.webp") center/cover no-repeat;
+    padding: 50px 0;
+    position: relative;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+    gap: 30px;
+    max-width: 900px;
+  }
+  .contact p {
+    padding: 0 20px 0 0;
+    text-align: left;
+    font-size: 20px;
+  }
+  .contact a {
+    font-size: 20px;
+  }
+  .contactcontent1,
+  .contactcontent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .email,
+  .tel {
+    text-align: left;
+  }
+  .reseauContent {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-logo {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    margin: 0;
+  }
+  .logoContact {
+    width: 200px;
+  }
+}
+@media (min-width: 1025px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 200px;
+    gap: 20px;
+    max-width: 900px;
+  }
+  .contact p {
+    padding: 0 0px 0 0;
+    text-align: left;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=index.css.map */

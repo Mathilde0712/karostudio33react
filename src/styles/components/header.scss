@@ -56,7 +56,20 @@
   font-size: 1.2rem;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+.animate-fade-in {
+  animation: fadeInUp 2s ease-out;
+}
 
 /* TABLETTE */
 @media (min-width: 768px) {

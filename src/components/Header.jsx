@@ -4,9 +4,9 @@ import logo from "../assets/photos/Karostudiologo1.png";
 
 // Desktop/tablette photos
 import photo1 from "../assets/photos/headerKaro.webp";
-import photo2 from "../assets/photos/allaitement.webp";
-import photo3 from "../assets/photos/Coralie-9.webp";
-import photo4 from "../assets/photos/kelly-25.webp";
+import photo3 from "../assets/photos/allaitement.webp";
+import photo4 from "../assets/photos/Coralie-9.webp";
+import photo5 from "../assets/photos/kelly-25.webp";
 
 // Mobile-specific photos
 import mobile1 from "../assets/photos/Coralie-6-_2_.webp";
@@ -15,26 +15,40 @@ import mobile2 from "../assets/photos/kelly-11.webp";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showText, setShowText] = useState(false);
 
+  // Detect screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    handleResize();
+    handleResize(); // on load
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Delay text appearance for sync
+  useEffect(() => {
+    if (currentSlide === 0) {
+      const timeout = setTimeout(() => {
+        setShowText(true);
+      }, 600); // delay to sync with slide transition
+      return () => clearTimeout(timeout);
+    } else {
+      setShowText(false);
+    }
+  }, [currentSlide]);
+
   const images = isMobile
-    ? [photo1, photo2, mobile1, mobile2]
-    : [photo1, photo2, photo3, photo4];
+    ? [photo1, photo3, mobile1, mobile2]
+    : [photo1,  photo3, photo4, photo5];
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1500,
+    speed: 1000,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
@@ -61,10 +75,9 @@ const Header = () => {
         ))}
       </Slider>
 
-      {/* Unique overlay layer, outside of slides */}
       <div className="overlay">
         <img src={logo} alt="logo" className="logo" />
-        {currentSlide === 0 && (
+        {showText && (
           <div className="text animate-fade-in">
             <h2>
               VOS PRÉCIEUX
