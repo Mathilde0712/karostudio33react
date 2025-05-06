@@ -35,7 +35,6 @@
 }
 
 .hero-content {
-  width: 100%;
   padding: 10px;
   background: rgb(241, 241, 241);
 }
@@ -54,8 +53,9 @@
   font-weight: 200;
   font-size: 16px;
   text-align: justify;
-  margin-bottom: 5px;
-  padding: 0 15px 0 15px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
 }
 
 .hero-text1 {
@@ -64,8 +64,9 @@
   font-weight: 200;
   font-size: 16px;
   text-align: justify;
-  margin-bottom: 5px;
-  padding: 0 15px 0 15px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0rem 1rem;
 }
 
 .heroImg {
