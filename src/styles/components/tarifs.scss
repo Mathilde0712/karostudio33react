@@ -5,8 +5,15 @@
   background-color: rgb(221, 208, 190);
 }
 
+.tarif a {
+  font-size: 25px;
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: 100;
+  color: rgb(174,145,117);
+}
 .conctactMe {
-  margin-top: 20px !important; 
+  margin-top: 20px !important;
   font-size: 30px !important;
 }
 
@@ -26,33 +33,14 @@
   padding-bottom: 50px;
 }
 
-.separator1 {
-  padding: 20px;
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-}
 
-.separator2 {
-  padding: 20px;
-  border-bottom: 3px solid white;
-}
-
-.separator3 {
-  padding: 20px;
-  border-bottom: 3px solid white;
-  margin-bottom: 20px;
-}
-
-.separator3 p{
-  text-align: center;
-}
 
 .tarif img {
   width: 200px;
   height: 250px;
   object-fit: cover;
-  border-radius: 5px;
   object-position: top;
+  border-radius: 12%;
 }
 
 .tarif h2 {
@@ -83,102 +71,54 @@ p {
   font-family: "cormorant";
 }
 
+.sup2{
+  margin-bottom: 10px;
+}
 @media (min-width: 768px) {
   .content-tarif {
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-bottom: 40px;
     
   }
 
   .tarifcontent {
     display: flex;
     flex-direction: column;
-    padding-bottom: 220px;
   }
 
-  .contain{
-    display: flex;
-  }
-
-  
-
-  .separator1 {
-    border-top: none;
-    border-bottom: none;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
-    height: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .separator2 {
-    border-bottom: none;
-    border-right: 3px solid white;
-    height: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .separator3 {
-    border-bottom: none;
-    border-right: 3px solid white;
-    
-    height: 200px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .separator4{
-    border-left: 3px solid white;
-  }
   .tarif img {
     width: 150px;
-    height: 200px;
+    height: 225px;
     object-fit: cover;
   }
-
-  
-
 }
 
 @media (min-width: 1025px) {
-
   .content-tarif {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
+    gap: 40px;
+   
+  }
+ 
+  .tarifcontent h2{
+    font-size: 30px;
+    margin-top: 15px;
   }
 
-  .separator1 {
-  padding-left: 25px;
-    padding-right: 25px;
+  .tarifcontent p{
+    font-size: 15px;
   }
 
-  .separator2 {
-  border-right: none;
-    padding-left: 25px;
-    padding-right: 25px;
+  .prix{
+    font-weight: 600;
   }
-
-  .separator3 {
-  
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-
-  .separator4 {
-    padding-left: 25px;
-
-  }
-
   .tarif img {
-    width: 200px;
-    height: 250px;
+    width: 220px;
+    height: 330px;
     object-fit: cover;
   }
 

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import MomentDeVie from "../components/MomentDeVie";
 import Tarifs from "../components/Tarifs";
+import Tarifs2 from "../components/Tarifs2";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
            <Hero />
            <MomentDeVie />
            <Tarifs />
+           <Tarifs2 />
            <Contact />
           
         </div>
