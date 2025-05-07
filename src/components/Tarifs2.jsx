@@ -1,6 +1,7 @@
-import famillePhoto from "../assets/photos/famille.webp";
-import couplePhoto from "../assets/photos/couple.webp";
-import mariage2 from "../assets/photos/mariage2.webp";
+
+import couplePhoto from "../assets/photos/kelly-1-3.webp";
+import mom from "../assets/photos/momnea.webp";
+import gateau from "../assets/photos/gateau.webp"
 
 const Tarifs2 = () => {
     return (
@@ -16,7 +17,7 @@ const Tarifs2 = () => {
           
         </div>
         <div className="tarifcontent ">
-          <img src={mariage2} alt="mariée" />
+          <img src={mom} alt="institut" />
           <h2 className="tarifTitle">Cocon de naissance</h2>
           <p>Profiter d’un <strong>moment hors </strong></p>
           <p><strong>du temps</strong> avec votre bébé.</p>
@@ -25,7 +26,7 @@ const Tarifs2 = () => {
         </div>
 
         <div className="tarifcontent">
-          <img src={famillePhoto} alt="famille" />
+          <img src={gateau} alt="gateau" />
           <h2 className="tarifTitle">Évènements</h2>
           <p>Chaque événement est <strong>unique </strong>, </p>
           <p>c’est pourquoi les prestations</p>

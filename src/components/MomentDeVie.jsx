@@ -7,7 +7,8 @@ import mariage2 from "../assets/photos/mariage2.webp";
 import pro from "../assets/photos/pro.webp";
 import evjf from "../assets/photos/evjf-julie-1-12-_2_.webp";
 import bapteme from "../assets/photos/bapteme.webp"
-import gateau from "../assets/photos/gateau.webp"
+import anniv from "../assets/photos/IMG_8509-Avec-accentuation-Bruit.webp"
+import reveal from "../assets/photos/lilaevent-1.webp"
 
 const MomentDeVie = () => {
     return (
@@ -37,7 +38,7 @@ const MomentDeVie = () => {
             <h1 className='title-moment'>ÉVÈNEMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>
-                    <img src={gateau} alt='anniversaire'/>
+                    <img src={anniv} alt='anniversaire'/>
                     <h2  >Anniversaire</h2>
                 </div>
                 <div className='moment'>
@@ -54,7 +55,7 @@ const MomentDeVie = () => {
         <div className='momentDeVie momentDeVie3'>
             <div className='content-moment'>
                 <div className='moment'>
-                    <img src={grossessePhoto} alt='gender reveal'/>
+                    <img src={reveal} alt='gender reveal'/>
                     <h2 className='momentTitle2' >Gender Reveal</h2>
                 </div>
                 <div className='moment'>

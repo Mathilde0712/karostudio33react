@@ -22,7 +22,8 @@
 }
 
 .momentDeVie3 {
-  margin-top: 50px;
+  margin-top: 15
+  px;
 }
 
 .momentTitle {
@@ -35,7 +36,8 @@
 .content-moment {
   display: flex;
   flex-direction: column;
-padding-bottom: 50px;
+margin-bottom: 15px;
+
 }
 
 .moment img {
@@ -61,6 +63,7 @@ padding-bottom: 50px;
     flex-direction: row;
     align-items: space-around;
     gap: 20px;
+    padding-bottom: 50px;
   }
   .moment img {
     width: 150px;
