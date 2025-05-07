@@ -36,7 +36,7 @@ const Home = () => {
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.karostudio33.com/" />
-  <meta property="og:image" content="/public/headerKaro.webp" />
+  <meta property="og:image" content="https://karostudio33.vercel.app/images/preview.webp" />
 
   {/* Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@ const Home = () => {
     name="twitter:description"
     content="Photographie professionnelle : portraits, mariages, grossesse, naissance et plus à Bordeaux."
   />
-  <meta name="twitter:image" content="/public/headerKaro.webp"/>
+  <meta name="twitter:image" content="https://karostudio33.vercel.app/images/preview.webp"/>
 </Helmet>
       <Header />
       <Hero />
