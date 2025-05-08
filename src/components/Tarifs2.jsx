@@ -1,6 +1,6 @@
 
 import couplePhoto from "../assets/photos/kelly-1-3.webp";
-import mom from "../assets/photos/momnea.webp";
+import bebebain from "../assets/photos/bebebain.webp";
 import gateau from "../assets/photos/gateau.webp"
 
 const Tarifs2 = () => {
@@ -17,7 +17,7 @@ const Tarifs2 = () => {
           
         </div>
         <div className="tarifcontent ">
-          <img src={mom} alt="institut" />
+          <img src={bebebain} alt="institut" />
           <h2 className="tarifTitle">Cocon de naissance</h2>
           <p>Profiter d’un <strong>moment hors </strong></p>
           <p><strong>du temps</strong> avec votre bébé.</p>

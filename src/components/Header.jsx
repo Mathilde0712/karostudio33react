@@ -4,7 +4,7 @@ import logo from "../assets/photos/Karostudiologo1.png";
 
 // Desktop/tablette photos
 import photo1 from "../assets/photos/headerKaro.webp";
-import photo3 from "../assets/photos/allaitement.webp";
+import photo3 from "../assets/photos/banniereKaro.webp";
 import photo4 from "../assets/photos/Coralie-9.webp";
 import photo5 from "../assets/photos/kelly-25.webp";
 
@@ -40,8 +40,8 @@ const Header = () => {
   }, [currentSlide]);
 
   const images = isMobile
-    ? [photo1, photo3, mobile1, mobile2]
-    : [photo1,  photo3, photo4, photo5];
+    ? [photo1, mobile1, mobile2]
+    : [photo1, photo4, photo3, photo5];
 
   const settings = {
     dots: false,

@@ -7,15 +7,17 @@ const Hero = () => {
         <h1 className="hero-title">À mon sujet</h1>
         <div className="Herocontent">
           <p className="hero-text1">
-          Maman de deux enfants, la photographie est avant tout une passion, mais aussi le défi d’une nouvelle aventure.
-
+          Je suis une maman de deux enfants passionnée de photographie, guidée par l’envie de capturer l’émotion pure et les instants précieux de la vie.
 
           </p>
-          <p className="hero-text hero-text2">
-          Mon style est lumineux et épuré, dans la douceur des tons beige et blanc. Je capture les moments importants de votre vie avec sensibilité et authenticité.
-          </p>
+        
           <p className="hero-text">
-          Je veille à ce que vous vous sentiez détendue et à l’aise tout au long de la séance, en créant une atmosphère calme et chaleureuse.
+            À travers une approche douce et naturelle, je crée des images
+            intemporelles dans des tons beiges et blancs, inspirées de l’univers
+            bohème. Chaque séance est une parenthèse de tendresse, où la
+            simplicité révèle toute la beauté de vos histoires. Je veille à ce
+            que vous vous sentiez détendue et à l’aise tout au long de la
+            séance, en créant une atmosphère calme et chaleureuse.
           </p>
         </div>
       </div>
