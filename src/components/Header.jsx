@@ -79,8 +79,8 @@ const Header = () => {
         {menuOpen && (
           <nav className="dropdown-menu">
             <a href="#accueil" onClick={() => setMenuOpen(false)}>À mon sujet</a>
-            <a href="#moment" onClick={() => setMenuOpen(false)}>Moment de vie</a>
-            <a href="#evenement" onClick={() => setMenuOpen(false)}>Évènement de vie</a>
+            <a href="#moment" onClick={() => setMenuOpen(false)}>Moments de vie</a>
+            <a href="#evenement" onClick={() => setMenuOpen(false)}>Évènements de vie</a>
             <a href="#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
           </nav>
