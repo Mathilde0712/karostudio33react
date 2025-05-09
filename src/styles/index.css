@@ -427,7 +427,6 @@
   .content-moment {
     display: flex;
     flex-direction: row;
-    align-items: space-around;
     gap: 20px;
   }
   .moment img {
