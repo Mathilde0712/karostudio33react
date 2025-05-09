@@ -2,7 +2,7 @@ import HeroKaro from "../assets/photos/heroKaro.webp";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="accueil">
       <div className="hero-content">
         <h1 className="hero-title">À mon sujet</h1>
         <div className="Herocontent">

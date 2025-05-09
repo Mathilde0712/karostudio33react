@@ -8,7 +8,43 @@
   object-position: center top; /* ou "center 20%" si besoin */
   overflow: hidden;
 }
+/* Mobile first */
+.menu-container {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* pour garder le bouton à gauche */
+  padding: 0 20px;
+}
 
+.burger {
+  background: transparent;
+  color: rgb(102, 81, 59);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: -4px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: -4px;
+  left: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* ou space-around / space-between selon ton design */
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: transparent;
+  z-index: 1000;
+  white-space: nowrap;
+}
 .slide img {
   width: 100%;
   height: 80vh;
@@ -39,8 +75,8 @@
   align-self: flex-end;
   max-width: 120px;
   position: absolute;  /* 👈 nécessaire pour que top/right fonctionnent en mobile */
-  top: 1rem;
-  right: 1rem;
+  top: 0rem;
+  right: 0rem;
   height: auto;
   
 }
@@ -72,7 +108,25 @@
 }
 
 /* TABLETTE */
-@media (min-width: 768px) {
+
+@media (min-width : 768px) {
+  .logo{
+    max-width: 200px;
+    top: -10px;
+    right: -5px;
+  }
+ 
+  .dropdown-menu {
+    flex-direction: row;
+    background: none;
+    box-shadow: none;
+    gap: 30px;
+  }
+
+  .dropdown-menu a {
+    color:  rgb(102,81,59);
+    font-size: 20px;
+  }
   .overlay {
     padding: 2rem 3rem;
   }
@@ -82,16 +136,7 @@
     font-size: 1.6rem;
   }
 
-  .logo {
-    max-width: 300px;
-  }
-}
 
-
-@media (min-width : 768px) {
-  .logo{
-    max-width: 200px;
-  }
 }
 
 /* DESKTOP */

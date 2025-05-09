@@ -16,28 +16,37 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showText, setShowText] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Detect screen size
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    handleResize(); // on load
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Delay text appearance for sync
   useEffect(() => {
     if (currentSlide === 0) {
       const timeout = setTimeout(() => {
         setShowText(true);
-      }, 600); // delay to sync with slide transition
+      }, 600);
       return () => clearTimeout(timeout);
     } else {
       setShowText(false);
     }
   }, [currentSlide]);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuOpen && !e.target.closest(".menu-container")) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [menuOpen]);
 
   const images = isMobile
     ? [photo1, mobile1, mobile2]
@@ -61,6 +70,21 @@ const Header = () => {
 
   return (
     <div className="header">
+      {/* Menu burger */}
+      <div className="menu-container">
+        <button className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+        {menuOpen && (
+          <nav className="dropdown-menu">
+            <a href="#accueil" onClick={() => setMenuOpen(false)}>À mon sujet</a>
+            <a href="#moment" onClick={() => setMenuOpen(false)}>Moment de vie</a>
+            <a href="#tarifs" onClick={() => setMenuOpen(false)}>Tarifs</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          </nav>
+        )}
+      </div>
+
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index} className="slide">

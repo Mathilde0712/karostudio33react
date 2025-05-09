@@ -13,7 +13,7 @@ import reveal from "../assets/photos/lilaevent-1.webp"
 const MomentDeVie = () => {
     return (
         <div>
-        <div className='momentDeVie momentDeVie1'>
+        <div className='momentDeVie momentDeVie1' id='moment' >
             <h1 className='title-moment'>MOMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>

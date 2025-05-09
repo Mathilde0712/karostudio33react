@@ -2,7 +2,7 @@ import logo from "../assets/photos/Karostudiologo1.png";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
     <div className="contact-wrapper">
       <h1>PRISE DE CONTACT</h1>
       <p>

@@ -6,7 +6,7 @@ import baby1 from "../assets/photos/NOA-one-5.webp"
 
 const Tarifs = () => {
   return (
-    <div className="tarif ">
+    <div className="tarif " id="tarifs">
       <h1 className="title-tarif">TARIFS</h1>
       <div className="content-tarif ">
         <div className="tarifcontent">
