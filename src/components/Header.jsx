@@ -7,7 +7,7 @@ import photo1 from "../assets/photos/headerKaro.webp";
 
 import photo3 from "../assets/photos/banniereKaro.webp";
 import photo4 from "../assets/photos/Coralie-9.webp";
-import photo5 from "../assets/photos/kelly-25.webp";
+import photo5 from "../assets/photos/kelly33-1-2.webp";
 
 // Mobile-specific photos
 import mobile1 from "../assets/photos/Coralie-6-_2_.webp";
