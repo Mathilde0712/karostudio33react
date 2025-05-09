@@ -4,7 +4,6 @@ import logo from "../assets/photos/Karostudiologo1.png";
 
 // Desktop/tablette photos
 import photo1 from "../assets/photos/headerKaro.webp";
-
 import photo3 from "../assets/photos/banniereKaro.webp";
 import photo4 from "../assets/photos/Coralie-9.webp";
 import photo5 from "../assets/photos/kelly33-1-2.webp";
@@ -12,7 +11,7 @@ import photo5 from "../assets/photos/kelly33-1-2.webp";
 // Mobile-specific photos
 import mobile1 from "../assets/photos/Coralie-6-_2_.webp";
 import mobile2 from "../assets/photos/kelly-11.webp";
-
+import mobile3 from "../assets/photos/bebemob.webp"
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -50,7 +49,7 @@ const Header = () => {
   }, [menuOpen]);
 
   const images = isMobile
-    ? [photo1, mobile1, mobile2]
+    ? [photo1, mobile1, mobile2, mobile3]
     : [photo1,  photo4, photo3, photo5];
 
   const settings = {
@@ -96,6 +95,8 @@ const Header = () => {
               className={`slide-img ${
                 !isMobile && src === photo1 ? "special-position" : ""
               }`}
+               loading="eager"
+               fetchPriority="high"
             />
           </div>
         ))}
