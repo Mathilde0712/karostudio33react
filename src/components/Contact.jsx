@@ -49,8 +49,15 @@ const Contact = () => {
     
     <img src={logo} alt="logo" className="logoContact footer-logo" />
     <footer className="footer">
+  <nav className="footer-nav">
+    <a href="#accueil">À mon sujet</a>
+    <a href="#moment">Moment de vie</a>
+    <a href="#evenement">Évènement de vie</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
   <p>© 2025 KaroStudio. Tous droits réservés.</p>
-  <a href="/mentions-legales">Mentions légales</a>
+  <a href="/mentions-legales" target="_blank" rel="noopener noreferrer">Mentions légales</a>
 </footer>
   </div>
    

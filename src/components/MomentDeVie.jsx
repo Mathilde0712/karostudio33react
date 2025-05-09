@@ -34,7 +34,7 @@ const MomentDeVie = () => {
                 </div>
             </div>
         </div>
-        <div className='momentDeVie momentDeVie2'>
+        <div className='momentDeVie momentDeVie2' id='evenement'>
             <h1 className='title-moment'>ÉVÈNEMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>

@@ -9,9 +9,17 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+
   .footer p{
     color: rgb(174,145,117) !important;
+    padding-bottom: 0 !important;
   }
 
   .footer a {

@@ -31,6 +31,9 @@ $color-7: rgb(109,109,109);
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 @media (min-width : 1025px) {
     body {
