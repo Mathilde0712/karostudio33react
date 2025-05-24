@@ -1,0 +1,121 @@
+.pregnancy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(221, 208, 190);
+    font-family: "merri";
+    padding: 20px;
+    font-weight: 200;
+  
+    .pregnancy-image {
+      text-align: center;
+  
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+  
+      .caption {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #a78c7b;
+        text-align: center;
+      }
+    }
+  
+    .pregnancy-text {
+      margin-top: 20px;
+      text-align: center;
+  
+      h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: white !important;
+        font-family: "dancing" !important;
+        text-align: center;
+      }
+  
+      .intro {
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+  
+      .divider {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+  
+      p {
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+  
+      .highlight {
+        margin-top: 20px;
+        font-size: 16px;
+        color: white;
+    
+      }
+    }
+    .pregnancy-image {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+      
+        .slick-slide img {
+          width: 100%;
+          height: auto;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+      
+        .caption {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #a78c7b;
+        }
+      
+    
+      }
+  }
+  
+  // Desktop version
+  @media (min-width: 768px) {
+    .pregnancy-section {
+      flex-direction: row;
+      justify-content: center;
+
+      padding: 40px;
+  
+      .pregnancy-image {
+        margin-right: 40px;
+  
+        img {
+          max-width: 350px;
+        }
+  
+        .caption {
+          font-size: 16px;
+        }
+      }
+  
+      .pregnancy-text {
+        max-width: 600px;
+        text-align: center;
+        margin-top: 40px;
+  
+        h2 {
+          font-size: 36px;
+        }
+  
+        .intro,
+        p {
+          font-size: 16px;
+        }
+  
+        .highlight {
+          font-size: 18px;
+        }
+      }
+    }
+  }

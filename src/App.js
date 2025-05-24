@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Home from "./Pages/Home";
 import MentionsLegales from "./components/MentionsLegales";
+import Grossesse from "./components/Grossesse";
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="*" element={<Home/>}/>
       <Route path="/mentions-legales" element={<MentionsLegales/>}/>
+      <Route path="/grossesse" element={<Grossesse />} />
     </Routes>
     </BrowserRouter>
   )
