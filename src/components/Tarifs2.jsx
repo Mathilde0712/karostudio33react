@@ -1,6 +1,6 @@
 
 import couplePhoto from "../assets/photos/kelly-1-3.webp";
-import bebebain from "../assets/photos/bebebain.webp";
+import bebebain from "../assets/photos/alyah-1-16.webp";
 import gateau from "../assets/photos/gateau.webp"
 
 const Tarifs2 = () => {

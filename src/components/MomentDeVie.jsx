@@ -9,7 +9,7 @@ import evjf from "../assets/photos/evjf-julie-1-12-_2_.webp";
 import bapteme from "../assets/photos/bapteme.webp"
 import anniv from "../assets/photos/IMG_8509-Avec-accentuation-Bruit.webp"
 import reveal from "../assets/photos/lilaevent-1.webp"
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const MomentDeVie = () => {
     return (
@@ -18,10 +18,10 @@ const MomentDeVie = () => {
             <h1 className='title-moment'>MOMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>
-                <Link to="/grossesse">
+                {/*<Link to="/grossesse">*/}
                     <img src={grossessePhoto} alt='grossesse'/>
                     <h2 className='momentTitle'>Grossesse</h2>
-                    </Link>
+                   {/* </Link>*/}
                 </div>
                 <div className='moment'>
                     <img src={naissancePhoto} alt='naissance' />
