@@ -10,9 +10,9 @@ const Tarifs2 = () => {
         <div className="tarifcontent">
           <img src={couplePhoto} alt="couple" />
           <h2 className="tarifTitle">Eclat de vie</h2>
-          <p><strong>20 euros offert</strong> pour une</p>
-          <p>réservation <strong>simultané</strong> d’une </p>
-          <p className="text1">séance <strong>grossesse et naissance</strong>
+          <p>Séance <strong>grossesse + naissance</strong> </p>
+          <p> <strong>à partir de 370 euros</strong> </p>
+          <p className="text1">pour 45 photos
           </p>
           
         </div>
