@@ -14,7 +14,7 @@ const Tarifs = () => {
           <h2 className="tarifTitle">Bulle de douceur </h2>
           <p><strong>Toutes Séances</strong></p>
           <p className="com">(sauf grossesse et naissance)</p>
-          <p>25 photos numérique en galerie</p>
+          <p>25 photos numériques en galerie</p>
           <p className="text1">Home studio ou extérieur</p>
           <p className="prix">190 euros</p>
         </div>
