@@ -1,5 +1,5 @@
-import baby2 from "../assets/photos/sunset-nicolas-et-charlotte-1-16.webp";
-import famille1 from "../assets/photos/Coralie-3.webp";
+import filles from "../assets/photos/unnamed.webp";
+import bebe2 from "../assets/photos/12022025-IMG_7967-Avec-accentuation-Bruit-_1_.webp";
 import baby1 from "../assets/photos/NOA-one-5.webp";
 
 const Tarifs = () => {
@@ -19,7 +19,7 @@ const Tarifs = () => {
           <p className="prix">190 euros</p>
         </div>
         <div className="tarifcontent ">
-          <img src={baby2} alt="bébé" />
+          <img src={filles} alt="bébé" />
           <h2 className="tarifTitle">Jolie merveille </h2>
           <p>
             <strong>Toutes Séances</strong>
@@ -31,7 +31,7 @@ const Tarifs = () => {
         </div>
 
         <div className="tarifcontent">
-          <img src={famille1} alt="famille" />
+          <img src={bebe2} alt="famille" />
           <h2 className="tarifTitle">Sur un nuage </h2>
           <p>
             <strong>Séance Grossesse ou Naissance</strong>
