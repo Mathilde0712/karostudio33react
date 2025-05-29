@@ -57,7 +57,7 @@ const Header = () => {
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
