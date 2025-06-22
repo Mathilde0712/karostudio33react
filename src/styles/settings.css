@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;

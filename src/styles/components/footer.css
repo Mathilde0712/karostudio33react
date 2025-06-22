@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
@@ -38,13 +42,20 @@
   justify-content: center;
 }
 
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .footer p {
   color: rgb(174, 145, 117) !important;
+  padding-bottom: 0 !important;
 }
 
 .footer a {
   display: block;
-  margin-top: 0.5rem;
   color: #888;
   text-decoration: none;
 }

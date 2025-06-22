@@ -17,7 +17,7 @@ const Grossesse = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   return (
@@ -33,7 +33,7 @@ const Grossesse = () => {
       </div>
 
       <div className="pregnancy-text">
-        <h2>Grossesse</h2>
+        <h1>Grossesse</h1>
         <p className="intro">
           Une séance photo de maternité est un moment spécial et intime,<br />
           capturant la beauté et l'attente avant l'arrivée de bébé.

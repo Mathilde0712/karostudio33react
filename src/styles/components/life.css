@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 1025px) {
   body {
     min-width: 1025px;
@@ -49,10 +53,6 @@
   font-size: 40px;
 }
 
-.momentDeVie3 {
-  margin-top: 50px;
-}
-
 .momentTitle {
   color: white !important;
 }
@@ -64,7 +64,6 @@
 .content-moment {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
 }
 
 .moment img {
@@ -84,14 +83,15 @@
   text-align: center;
   padding-bottom: 15px;
   padding-top: 0;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
   .content-moment {
     display: flex;
     flex-direction: row;
-  
     gap: 20px;
+    padding-bottom: 50px;
   }
   .moment img {
     width: 150px;
@@ -108,8 +108,8 @@
     gap: 40px;
   }
   .moment img {
-    width: 200px;
-    height: 300px;
+    width: 220px;
+    height: 330px;
     -o-object-fit: cover;
        object-fit: cover;
   }

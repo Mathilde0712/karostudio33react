@@ -1,0 +1,135 @@
+.pregnancy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(221, 208, 190);
+  font-family: "merri";
+  padding: 20px;
+  font-weight: 200;
+}
+.pregnancy-section .pregnancy-image {
+  text-align: center;
+}
+.pregnancy-section .pregnancy-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+.pregnancy-section .pregnancy-image .caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a78c7b;
+  text-align: center;
+}
+.pregnancy-section .pregnancy-text {
+  margin-top: 20px;
+  text-align: center;
+}
+.pregnancy-section .pregnancy-text h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: white !important;
+  font-family: "dancing" !important;
+  text-align: center;
+}
+.pregnancy-section .pregnancy-text .intro {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.pregnancy-section .pregnancy-text .divider {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.pregnancy-section .pregnancy-text p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.pregnancy-section .pregnancy-text .highlight {
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+}
+.pregnancy-section .pregnancy-image {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.pregnancy-section .pregnancy-image .slick-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pregnancy-section .pregnancy-image .caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a78c7b;
+}
+
+@media (min-width: 768px) {
+  .pregnancy-section .pregnancy-image {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  .pregnancy-section .pregnancy-image .slick-slide img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .pregnancy-section .pregnancy-image .caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #a78c7b;
+  }
+}
+@media (min-width: 1024px) {
+  .pregnancy-section {
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .pregnancy-section .pregnancy-image {
+    margin-right: 70px;
+  }
+  .pregnancy-section .pregnancy-image img {
+    max-width: 650px;
+  }
+  .pregnancy-section .pregnancy-image .slick-slide img {
+    width: 100%;
+    height: 650px;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .pregnancy-section .pregnancy-image .caption {
+    font-size: 16px;
+  }
+  .pregnancy-section .pregnancy-text {
+    max-width: 600px;
+    height: 600px;
+    text-align: center;
+    margin-top: 40px;
+    margin-top: 0;
+  }
+  .pregnancy-section .pregnancy-text h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  .pregnancy-section .pregnancy-text .intro,
+  .pregnancy-section .pregnancy-text p {
+    font-size: 16px;
+  }
+  .pregnancy-section .pregnancy-text .intro {
+    margin-bottom: 40px;
+  }
+  .pregnancy-section .pregnancy-text .highlight {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+}/*# sourceMappingURL=grossesse.css.map */
