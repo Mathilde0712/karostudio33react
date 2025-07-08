@@ -24,16 +24,22 @@ const MomentDeVie = () => {
                     </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/naissance">
                     <img src={naissancePhoto} alt='naissance' />
                     <h2 className='momentTitle' >Naissance</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/famille">
                     <img src={famillePhoto} alt='famille'/>
                     <h2  className='momentTitle'>Famille</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/couple">
                     <img src={couplePhoto} alt='couple'/>
                     <h2 className='momentTitle' >Couple</h2>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -41,16 +47,22 @@ const MomentDeVie = () => {
             <h1 className='title-moment'>ÉVÈNEMENTS DE VIE</h1>
             <div className='content-moment'>
                 <div className='moment'>
+                <Link to="/anniversaire">
                     <img src={anniv} alt='anniversaire'/>
                     <h2  >Anniversaire</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/mariage">
                     <img src={mariage2} alt='mariage' />
                     <h2>Mariage</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/bapteme">
                     <img src={bapteme} alt='baptême'/>
                     <h2>Baptême</h2>
+                    </Link>
                 </div>
                 
             </div>
@@ -58,16 +70,22 @@ const MomentDeVie = () => {
         <div className='momentDeVie momentDeVie3'>
             <div className='content-moment'>
                 <div className='moment'>
+                <Link to="/gender-reveal">
                     <img src={reveal} alt='gender reveal'/>
                     <h2 className='momentTitle2' >Gender Reveal</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/evjf">
                     <img src={evjf} alt='evjf' />
                     <h2 className='momentTitle2'>Evjf</h2>
+                    </Link>
                 </div>
                 <div className='moment'>
+                <Link to="/professionnel">
                     <img src={pro} alt='professionnel'/>
                     <h2 className='momentTitle2' >Professionnel</h2>
+                    </Link>
                 </div>
             </div>
         </div>

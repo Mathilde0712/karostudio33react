@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-const Grossesse = () => {
+const Professionnel = () => {
   const settings = {
     dots: false,
     arrows : false,
@@ -31,39 +31,33 @@ const Grossesse = () => {
           <div><img src={img3} alt="Naissance 3" /></div>
          
         </Slider>
-        <p className="caption">Chaque moment compte,<br />du premier battement au premier regard</p>
+        
       </div>
 
       <div className="pregnancy-text">
-        <h1>Grossesse</h1>
+        <h1>Professionnel</h1>
         <p className="intro">
-          Une séance photo de maternité est un moment spécial et intime,<br />
-          capturant la beauté et l'attente avant l'arrivée de bébé.
+        En tant que photographe, je suis là pour vous aider à mettre en valeur votre image, votre personnalité ou votre entreprise.
         </p>
     
         <p>
-          La période idéale pour une séance photo de maternité se situe généralement entre le
-          7ème et 8ème mois de grossesse.
+        Que ce soit pour des portraits, des photos pour votre site web, vos réseaux sociaux ou tout autre projet professionnel, je m’engage à créer des images de qualité, naturelles et percutantes. 
         </p>
         <p>
-          À ce stade, votre ventre est bien visible, et vous êtes encore suffisamment à l’aise pour
-          profiter pleinement de la séance.
+        Mon objectif est de capturer votre authenticité tout en vous mettant en confiance, afin que chaque photo reflète parfaitement votre identité ou votre message.
         </p>
         <p>
-          Mon objectif est de refléter vos émotions et de vous offrir des souvenirs inoubliables.
+         
         </p>
         <p>
-          Je vous propose plusieurs tenues qui vous sublimeront ainsi que des accessoires
-          comme des couronnes de fleurs.
+        N’hésitez pas à me contacter pour organiser un shooting qui vous mettra en valeur et renforcera votre présence professionnelle !
         </p>
-        <Link to="/#contact">
-        <p className="highlight">
-          Envie de jolies souvenirs ? écrivez moi pour réserver votre séance
-        </p>
-        </Link>
+        <a href='mailto:kro.studio33@gmail.com' >
+          <p className="highlight"><u>Contactez-moi pour votre shooting</u> </p>
+          </a>
       </div>
     </section>
   );
 };
 
-export default Grossesse;
+export default Professionnel;

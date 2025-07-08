@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-const Grossesse = () => {
+const Anniversaire = () => {
   const settings = {
     dots: false,
     arrows : false,
@@ -31,34 +31,35 @@ const Grossesse = () => {
           <div><img src={img3} alt="Naissance 3" /></div>
          
         </Slider>
-        <p className="caption">Chaque moment compte,<br />du premier battement au premier regard</p>
+      
       </div>
 
       <div className="pregnancy-text">
-        <h1>Grossesse</h1>
+        <h1>Anniversaire</h1>
         <p className="intro">
-          Une séance photo de maternité est un moment spécial et intime,<br />
-          capturant la beauté et l'attente avant l'arrivée de bébé.
+        Qu'il s'agisse d'une fête intime ou d'une grande célébration, je capture avec douceur et authenticité les sourires, les rires, les surprises et l’émotion qui font la magie de cet anniversaire. 
         </p>
     
         <p>
-          La période idéale pour une séance photo de maternité se situe généralement entre le
-          7ème et 8ème mois de grossesse.
+        Mon objectif est de vous offrir des souvenirs durables, que vous pourrez chérir et partager avec vos proches pour les années à venir. N'hésitez pas à me contacter pour organiser une séance photo qui reflète toute la joie et la convivialité de votre événement !
+        </p>
+
+        <p className="highlight">
+          
+Je te propose aussi la séance “smash cake”
         </p>
         <p>
-          À ce stade, votre ventre est bien visible, et vous êtes encore suffisamment à l’aise pour
-          profiter pleinement de la séance.
+        Le smash cake, c’est une séance photo fun et gourmande pour célébrer le premier anniversaire de votre bébé ! 
         </p>
         <p>
-          Mon objectif est de refléter vos émotions et de vous offrir des souvenirs inoubliables.
+        Laisser votre tout-petit découvrir, toucher son tout premier gâteau, dans un décor doux et bohème aux tons beige et blanc.
         </p>
         <p>
-          Je vous propose plusieurs tenues qui vous sublimeront ainsi que des accessoires
-          comme des couronnes de fleurs.
+        C’est un moment plein de rires, de surprise et d’émotion, immortalisé avec tendresse pour garder un souvenir unique de cette grande étape.
         </p>
         <Link to="/#contact">
         <p className="highlight">
-          Envie de jolies souvenirs ? écrivez moi pour réserver votre séance
+        Besoin d’informations ou envie de réserver? je suis à votre écoute.
         </p>
         </Link>
       </div>
@@ -66,4 +67,4 @@ const Grossesse = () => {
   );
 };
 
-export default Grossesse;
+export default Anniversaire;

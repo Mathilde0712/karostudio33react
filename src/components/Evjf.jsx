@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 
-const Grossesse = () => {
+const Evjf = () => {
   const settings = {
     dots: false,
     arrows : false,
@@ -31,34 +31,22 @@ const Grossesse = () => {
           <div><img src={img3} alt="Naissance 3" /></div>
          
         </Slider>
-        <p className="caption">Chaque moment compte,<br />du premier battement au premier regard</p>
+        
       </div>
 
       <div className="pregnancy-text">
-        <h1>Grossesse</h1>
+        <h1>Evjf</h1>
         <p className="intro">
-          Une séance photo de maternité est un moment spécial et intime,<br />
-          capturant la beauté et l'attente avant l'arrivée de bébé.
+        Avec un style naturel et convivial, je vous propose des séances photo sur mesure, adaptées à vos envies et à l’ambiance de votre EVJF.
         </p>
     
         <p>
-          La période idéale pour une séance photo de maternité se situe généralement entre le
-          7ème et 8ème mois de grossesse.
+        N’hésitez pas à me contacter pour organiser une séance qui reflète toute la joie et la fête de votre journée. Je suis impatiente de contribuer à rendre votre EVJF encore plus mémorable !
         </p>
-        <p>
-          À ce stade, votre ventre est bien visible, et vous êtes encore suffisamment à l’aise pour
-          profiter pleinement de la séance.
-        </p>
-        <p>
-          Mon objectif est de refléter vos émotions et de vous offrir des souvenirs inoubliables.
-        </p>
-        <p>
-          Je vous propose plusieurs tenues qui vous sublimeront ainsi que des accessoires
-          comme des couronnes de fleurs.
-        </p>
+        
         <Link to="/#contact">
         <p className="highlight">
-          Envie de jolies souvenirs ? écrivez moi pour réserver votre séance
+          Viens discuter de ton évènement
         </p>
         </Link>
       </div>
@@ -66,4 +54,4 @@ const Grossesse = () => {
   );
 };
 
-export default Grossesse;
+export default Evjf;
