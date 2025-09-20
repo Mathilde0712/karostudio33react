@@ -44,9 +44,9 @@ const Anniversaire = () => {
         Mon objectif est de vous offrir des souvenirs durables, que vous pourrez chérir et partager avec vos proches pour les années à venir. N'hésitez pas à me contacter pour organiser une séance photo qui reflète toute la joie et la convivialité de votre événement !
         </p>
 
-        <p className="highlight">
+        <p className="highlight2">
           
-Je te propose aussi la séance “smash cake”
+Je propose aussi la séance “smash cake”
         </p>
         <p>
         Le smash cake, c’est une séance photo fun et gourmande pour célébrer le premier anniversaire de votre bébé ! 
